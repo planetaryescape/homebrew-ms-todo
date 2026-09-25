@@ -6,23 +6,23 @@
 class MsTodo < Formula
   desc "Local-first, keyboard-native terminal client for Microsoft To Do"
   homepage "https://github.com/planetaryescape/ms-todo"
-  version "0.1.25"
+  version "0.1.26"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/planetaryescape/ms-todo/releases/download/v#{version}/ms-todo-v#{version}-macos-aarch64.tar.gz"
-      sha256 "eaeac04255d8509f6141bf08615f151aaacab4ce262f595933e9a36119215419"
+      sha256 "2aee00f49eb580b96323d74b1e5061f6794ad8051bfbc60b4a02a0c3da94a79b"
     else
       url "https://github.com/planetaryescape/ms-todo/releases/download/v#{version}/ms-todo-v#{version}-macos-x86_64.tar.gz"
-      sha256 "eecd0162221d87f767b9a3e2fa44cc446ef6e2486ce38b604ba9031b3af41376"
+      sha256 "3326d962ec32f323b7181bf2dbd9a00fabe4acd86d6ac88c90eeac64f908105c"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/planetaryescape/ms-todo/releases/download/v#{version}/ms-todo-v#{version}-linux-x86_64.tar.gz"
-      sha256 "7b9d1993ef96a6f5fa25c4d1337f8f2fbe7770ddffea4523d7c6fb8761afd3b6"
+      sha256 "eaa1b34e91527b4ee45b88a3266fab50db49d5ae87cf779f94791519bfeb4c86"
     end
   end
 
